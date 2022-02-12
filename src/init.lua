@@ -57,7 +57,7 @@ end
 function ParticleEmitter:Destroy()
 
 	if self.__dead then
-		error('Cannot destroy dead particle emitter.');
+		-- error('Cannot destroy dead particle emitter.');
 		return;
 	end
 

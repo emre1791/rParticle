@@ -5,6 +5,7 @@ type Particle = {
   readonly ticks: number;
   maxAge: number;
   isDead: boolean;
+  element: Instance;
 };
 
 interface ParticleConstructor {
