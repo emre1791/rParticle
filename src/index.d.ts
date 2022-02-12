@@ -1,4 +1,4 @@
-import Particle from "./Particle";
+import Particle from './Particle';
 
 type ParticleEmitter = {
   /**
@@ -19,12 +19,14 @@ type ParticleEmitter = {
   /**
    * This function is called when a particle is updated. Particle manipulation should be done here.
    */
-  onUpdate(particle: Particle, deltaTime: number): void;
+  onUpdate: (particle: Particle, deltaTime: number) => void;
 
   /**
    * This function is called when a particle is spawned. Particle manipulation should be done here.
    */
-  onSpawn(particle: Particle): void;
+  onSpawn: (particle: Particle) => void;
+
+  Destroy(): void;
 };
 
 interface ParticleEmitterConstructor {
